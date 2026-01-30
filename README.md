@@ -1,29 +1,6 @@
-<!-- Cover -->
-<p align="center">
-  <img src="assets/01.jpg" alt="SP All Write — cover" width="1000">
-</p>
+# SP All Write (All Glyphs) — Adobe Illustrator Script to Output Font Glyphs
 
-<!-- Carousel row (02–06) -->
-<p align="center">
-  <img src="assets/02.jpg" alt="02" width="160">
-  <img src="assets/03.jpg" alt="03" width="160">
-  <img src="assets/04.jpg" alt="04" width="160">
-  <img src="assets/05.jpg" alt="05" width="160">
-  <img src="assets/06.jpg" alt="06" width="160">
-</p>
-
-<p align="center">
-  <sub>
-    Full size:
-    <a href="assets/02.jpg?raw=1">02</a> ·
-    <a href="assets/03.jpg?raw=1">03</a> ·
-    <a href="assets/04.jpg?raw=1">04</a> ·
-    <a href="assets/05.jpg?raw=1">05</a> ·
-    <a href="assets/06.jpg?raw=1">06</a>
-  </sub>
-</p>
-
-# SP All Write — Adobe Illustrator Script to Output Font Glyphs
+![SP All Write — cover](assets/01.jpg)
 
 **SP All Write 1.0.jsx** is an ExtendScript for Adobe Illustrator that builds a text object containing the glyphs your font **actually renders** in Illustrator. It’s designed for type designers and graphic designers who need a fast “what’s inside this font?” view прямо на артборде — без ручной выгрузки и без мусора из неподдерживаемых символов.
 
@@ -133,6 +110,39 @@ Restart Illustrator. Then run via:
 
 ---
 
+## Usage
+
+Run the script via **File → Scripts → SP All Write** (or “Other Script…”).  
+A dialog will appear where you select the font, output mode, and character sets.
+
+![SP All Write — dialog](assets/02.jpg)
+
+1. Open any Illustrator document.
+2. Run **File → Scripts → SP All Write** (or “Other Script…”).
+3. Pick a font:
+   - start typing to filter the list
+   - double-click a font to select quickly
+4. Choose output options:
+   - Point text or Area text
+   - Separate into groups (paragraph breaks between selected sets)
+   - Show languages (requires module)
+5. Select glyph sets:
+   - default golden set is enabled
+   - open **Additional ▸** for optional blocks
+6. Click **OK**.
+7. The script creates a text frame named:
+   - `AllGlyphs_<PostScriptName>`
+
+---
+
+## Results report
+
+After generation, you’ll get a report window where you can review the glyph string and **copy** or **save** the report.
+
+![SP All Write — report](assets/03.jpg)
+
+---
+
 ## Optional: Language detection module
 
 The main script tries to load a companion file:
@@ -150,26 +160,9 @@ If found, it expects a global function:
 
 If you enable **“Show languages”** but the module is missing, the script will warn you and continue without language output.
 
----
+Example of the language list in the report (when the module is installed):
 
-## Usage
-
-1. Open any Illustrator document.
-2. Run **File → Scripts → SP All Write** (or “Other Script…”).
-3. Pick a font:
-   - start typing to filter the list
-   - double-click a font to select quickly
-4. Choose output options:
-   - Point text or Area text
-   - Separate into groups (paragraph breaks between selected sets)
-   - Show languages (requires module)
-5. Select glyph sets:
-   - default golden set is enabled
-   - open **Additional ▸** for optional blocks
-6. Click **OK**.
-7. The script creates a text frame named:
-   - `AllGlyphs_<PostScriptName>`
-8. Review the final report dialog, copy/save if needed.
+![SP All Write — languages list](assets/04.jpg)
 
 ---
 
@@ -182,6 +175,16 @@ In Safe Mode you’ll typically see:
 - scatter-scan optimizations disabled
 - “Enable all” removed
 - optional selections limited (to keep processing predictable)
+
+---
+
+## Examples
+
+### Large Unicode font example
+![SP All Write — Stepovik example](assets/05.jpg)
+
+### Display font example
+![SP All Write — Noto Sans example](assets/06.jpg)
 
 ---
 
