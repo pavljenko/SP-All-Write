@@ -5,11 +5,22 @@
 
 <!-- Carousel row (02–06) -->
 <p align="center">
-  <img src="assets/02.jpg" alt="SP All Write — screenshot 02" width="160" style="margin:0 6px;">
-  <img src="assets/03.jpg" alt="SP All Write — screenshot 03" width="160" style="margin:0 6px;">
-  <img src="assets/04.jpg" alt="SP All Write — screenshot 04" width="160" style="margin:0 6px;">
-  <img src="assets/05.jpg" alt="SP All Write — screenshot 05" width="160" style="margin:0 6px;">
-  <img src="assets/06.jpg" alt="SP All Write — screenshot 06" width="160" style="margin:0 6px;">
+  <img src="assets/02.jpg" alt="02" width="160">
+  <img src="assets/03.jpg" alt="03" width="160">
+  <img src="assets/04.jpg" alt="04" width="160">
+  <img src="assets/05.jpg" alt="05" width="160">
+  <img src="assets/06.jpg" alt="06" width="160">
+</p>
+
+<p align="center">
+  <sub>
+    Full size:
+    <a href="assets/02.jpg?raw=1">02</a> ·
+    <a href="assets/03.jpg?raw=1">03</a> ·
+    <a href="assets/04.jpg?raw=1">04</a> ·
+    <a href="assets/05.jpg?raw=1">05</a> ·
+    <a href="assets/06.jpg?raw=1">06</a>
+  </sub>
 </p>
 
 # SP All Write — Adobe Illustrator Script to Output Font Glyphs
