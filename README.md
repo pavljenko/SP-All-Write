@@ -1,4 +1,4 @@
-# SP All Write (All Glyphs) — Adobe Illustrator Script to Output Font Glyphs
+# SP All Write — Adobe Illustrator Script to Output Font Glyphs
 
 ![SP All Write — cover](assets/01.jpg)
 
